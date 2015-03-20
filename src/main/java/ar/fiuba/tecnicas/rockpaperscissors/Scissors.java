@@ -1,11 +1,18 @@
 package ar.fiuba.tecnicas.rockpaperscissors;
 
-public class Scissors extends Shape{
+public class Scissors{
 
-	@Override
-	public Shape vs(Shape aShape) {
-		// TODO Auto-generated method stub
-		return null;
+	public Rock vs(Rock aRock) {
+		return aRock;
 	}
 
+	public Scissors vs(Paper aPaper) {
+		return this;
+	}
+
+	public Scissors vs(Scissors aScissors) {
+		return this;
+	}
+
+	
 }
